@@ -45,7 +45,7 @@ export default function Navbar(){
        }
     }
     return(
-        <div className="w-full h-[3.3rem] bg-[#F5F7F8]  flex fixed z-50">
+        <div className="w-full h-[3.3rem] lg:h-[4.5rem] bg-[#F5F7F8]  flex fixed z-50">
           <div className="w-[68%] lg:w-[33.33%] text-green-500 flex items-center justify-start pl-4">
             <h1 className="text-xl font-semibold lg:text-2xl"><Link href="/">Jhumex</Link></h1>
           </div>
