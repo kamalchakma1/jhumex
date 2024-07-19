@@ -18,7 +18,7 @@ export default function Product({title,desc,img}:{title:String,desc:String,img:a
            {desc}
           </div>
           <div className="w-[95%] h-[2rem]  flex items-center justify-center">
-             <button onClick={OrderFormFun} className="w-[fit-content] uppercase px-4 py-2 bg-green-500 cursor-pointer hover:bg-green-600 rounded-sm text-white">Order Now</button>
+             <button onClick={OrderFormFun} className="w-[fit-content] uppercase px-4 py-2 bg-green-400 cursor-pointer hover:bg-green-500 rounded-sm text-white">Order Now</button>
           </div>
           {
             orderFormAto?<OrderForm/>:null
