@@ -33,7 +33,7 @@ export default function Footer(){
                 </div>
               </div>
               <div className="w-full h-[20%]  flex items-center gap-2 lg:mb-2 justify-center">
-                <h1 className="text-sm text-gray-300">&copy;2024 Jhuxpo</h1>
+                <h1 className="text-sm text-gray-300">&copy;2024 Jhumex</h1>
                 {/* <h1 className="text-sm text-gray-300">|</h1>
                 <h1 className="text-sm text-gray-300 cursor-pointer">Terms.</h1> */}
               </div>
