@@ -5,6 +5,7 @@ import { useRecoilState } from "recoil";
 import { MenuHamburgerAtom, SubMenuAtom, SubMenuMobileAtom } from "../app/store/atom";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { MdOutlineKeyboardArrowUp } from "react-icons/md";
+import { ProductData } from "../../data";
 import Link from "next/link";
 export default function Navbar(){
 
@@ -50,20 +51,19 @@ export default function Navbar(){
             <h1 className="text-xl font-semibold lg:text-2xl"><Link href="/">Jhumex</Link></h1>
           </div>
           <div className="w-[33.33%] hidden lg:flex items-center justify-center">
-            <ul className="w-[100%] items-center capitalize justify-center text-[0.90rem] font-medium flex gap-20">
+            <ul className="w-[100%] items-center  justify-center text-[0.90rem] font-medium flex gap-20">
                 <li className="cursor-pointer  flex relative items-center gap-2">
                  <p onClick={showSubMenuFun} className="flex items-center justify-center gap-2 hover:text-green-400">
                       products<span>{subMenuAto? <MdOutlineKeyboardArrowUp />:<MdKeyboardArrowDown/>}</span>
                  </p>                 
                 {
                     subMenuAto?<div className="w-[10rem] bg-white min-h-[10rem] absolute top-10 rounded-sm shadow-md">
-                    <ul className="w-full  p-4 flex flex-col gap-3 capitalize">
-                        <li className="hover:text-green-400"><Link href="/">Fresh Arecanuts</Link></li>
-                        <li className="hover:text-green-400"><Link href="/">Dry Arecanuts</Link></li>
-                        <li className="hover:text-green-400"><Link href="/">Arecanut leaf</Link></li>
-                        <li className="hover:text-green-400"><Link href="/">Northeast Lemon</Link></li>
-                        <li className="hover:text-green-400"><Link href="/">Pumkin</Link></li>
-                        <li className="hover:text-green-400"><Link href="/">Giger</Link></li>
+                    <ul className="w-full  p-4 flex flex-col gap-3 ">
+                        {
+                            ProductData.map((item, index) => {
+                                return <li key={index} className="hover:text-green-400 lowercase"><a href={`https://wa.me/6909748659?text=Hello%20I%20would%20like%20to%20know%20more%20about%20${item.productTitle}`} target="_blank">{item.productTitle}</a></li>
+                            })
+                        }
                     </ul>
                  </div>:null
 
@@ -83,7 +83,7 @@ export default function Navbar(){
           </div>
           <div id="menuDiv" className="w-full h-[20rem] lg:hidden pt-2 flex items-center justify-center bg-[#F5F7F8]  transition-all duration-300 fixed -bottom-[20rem] z-50">
             <div className="w-[90%]  h-full">
-                <ul className="w-[100%] pt-4 flex gap-10 flex-col capitalize">
+                <ul className="w-[100%] pt-4 flex gap-10 flex-col ">
                     <li className="w-[100%] min-h-6 flex flex-col items-start gap-4 text-md  font-medium">
                         <p className="flex gap-2 items-center justify-center" onClick={showSubMenuFun2}> prodcuts<span>
                             {

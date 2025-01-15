@@ -8,7 +8,7 @@ export default function Page(){
                     <div className="w-[fit-content] h-full rounded-full px-4 py-[0.40rem] bg-green-200 text-md">about us</div>
                 </div>
                 <div className="w-[80%] lg:w-[50%] mt-8 lg:mt-0 min-h-[80%]  pl-2 flex items-center ">
-                  <h1 className="text-[2rem] lg:text-4xl  font-medium leading-[2.2rem] lg:leading-[3.3rem] tracking-wide">{`We're`} dedicated to making natural products accessible to everyone.</h1>
+                  <h1 className="text-[2rem] lg:text-4xl  font-medium leading-[2.2rem] lg:leading-[3.3rem] tracking-wide">{`We're`} dedicated to making natural products and handicrafts accessible to everyone.</h1>
                 </div>
             </div>
             {/* Team Image */}
@@ -21,7 +21,7 @@ export default function Page(){
           
                   <p>
                     {`
-                     We're dedicated to bringing you the best flavors and traditions of Northeast India while supporting local farmers, producers and preserving natural resources.
+                     We're dedicated to bringing you the best flavors and traditions of Northeast India while supporting local farmers, producers, craftspeople and preserving natural resources.
                     `}
                   </p>
                   <p>

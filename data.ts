@@ -54,5 +54,5 @@ export const ProductData = [
     productTitle: "Ginger",
     productDesc:
       "Ginger can be used to make different kinds of products.Get best Ginger for your needs.",
-  },
+  }
 ];

@@ -11,9 +11,9 @@ export default function Footer(){
                 </div>
                 <div className="w-full h-[33.33%]  flex items-center justify-center">
                     <ul className="flex gap-4 text-sm">
-                        <li className="cursor-pointer hover:text-green-400"><Link href="/about">About</Link></li>
-                        <li className="cursor-pointer hover:text-green-400"><Link href="/contact">Contact Us</Link></li>
-                        <li className="cursor-pointer hover:text-green-400"><Link href="/feedback">Feedback</Link></li>
+                        <li className="cursor-pointer hover:text-green-400"><Link href="/about">about</Link></li>
+                        <li className="cursor-pointer hover:text-green-400"><Link href="/contact">contact us</Link></li>
+                        {/* <li className="cursor-pointer hover:text-green-400"><Link href="/feedback">Feedback</Link></li> */}
                     </ul>
                 </div>
                 <div className="w-full h-[33.33%]  flex items-center justify-center">
@@ -34,8 +34,8 @@ export default function Footer(){
               </div>
               <div className="w-full h-[20%]  flex items-center gap-2 lg:mb-2 justify-center">
                 <h1 className="text-sm text-gray-300">&copy;2024 Jhuxpo</h1>
-                <h1 className="text-sm text-gray-300">|</h1>
-                <h1 className="text-sm text-gray-300 cursor-pointer">Terms.</h1>
+                {/* <h1 className="text-sm text-gray-300">|</h1>
+                <h1 className="text-sm text-gray-300 cursor-pointer">Terms.</h1> */}
               </div>
           </div>
         </div>
